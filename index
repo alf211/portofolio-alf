@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio DKV - Alif Ahmad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f0f0;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #000428, #004e92);
+      color: white;
+      padding: 80px 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      opacity: 0.8;
+    }
+    nav {
+      background: #004e92;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 10px 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #004e92;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .prestasi {
+      list-style: none;
+      padding-left: 0;
+    }
+    .prestasi li {
+      background: white;
+      padding: 15px 20px;
+      border-left: 5px solid #004e92;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    #kontak form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+    #kontak input, #kontak textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    #kontak button {
+      background: #004e92;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alif Ahmad</h1>
+    <p>Mahasiswa Desain Komunikasi Visual • Visual Storyteller • Motion Enthusiast</p>
+  </header>  <nav>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#karya">Karya</a></li>
+      <li><a href="#prestasi">Prestasi</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>  <section id="beranda" data-aos="fade-up">
+    <h2 class="section-title">Tentang Saya</h2>
+    <p style="text-align:center; max-width: 700px; margin:auto;">Saya adalah mahasiswa Desain Komunikasi Visual yang memiliki passion dalam storytelling visual, desain interaktif, dan motion graphics. Saya percaya bahwa desain bukan hanya estetika, tetapi juga pengalaman dan makna.</p>
+  </section>  <section id="karya" data-aos="fade-up">
+    <h2 class="section-title">Karya-Karya Pilihan</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x300?text=Poster+Desain" alt="Poster">
+      <img src="https://via.placeholder.com/400x300?text=Logo+Brand" alt="Logo">
+      <img src="https://via.placeholder.com/400x300?text=UX+Design" alt="UX">
+      <img src="https://via.placeholder.com/400x300?text=Motion+Graphics" alt="Motion">
+    </div>
+  </section>  <section id="prestasi" data-aos="fade-up">
+    <h2 class="section-title">Prestasi</h2>
+    <ul class="prestasi">
+      <li>Juara 1 Lomba Poster Nasional - Festival Desain 2024</li>
+      <li>Finalis UX Design Competition - Adobe x BINUS 2023</li>
+      <li>Juara Favorit Motion Graphics - DKV Expo 2023</li>
+    </ul>
+  </section>  <section id="kontak" data-aos="fade-up">
+    <h2 class="section-title">Kontak</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Pesan"></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>  <footer>
+    © 2025 Alif Ahmad • Portofolio DKV
+  </footer>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>
+    AOS.init();
+  </script></body>
+</html>
